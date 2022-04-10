@@ -1,0 +1,20 @@
+#include<stdio.h>
+void copy(char* s1, char* s2)
+{
+	for (; *s2 != '\0'; *s1 = *s2, s1++, s2++)
+	{
+		;
+	}
+	*s1 = '\0';
+}
+int main()
+{
+	int n;
+	char str1[10], str2[] = "hello";
+	copy(str1, str2);
+	for (n = 0; str1[n] != '\0'; n++)
+	{
+		printf("%c", str1[n]);
+	}
+	return 0;
+}
